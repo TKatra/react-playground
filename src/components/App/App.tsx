@@ -1,13 +1,19 @@
-import { useReducer, useState } from 'react';
+import { Route, Routes } from 'react-router-dom'
+import About from '../About/About';
+import Header from '../Header/Header';
 import './App.scss';
 
-function App () {
+export default function App () {
 
   return (
     <div className="App">
-      <h2>Hello World! :D</h2>
+      <Header />
+      <main className='mt-4'>
+        <Routes>
+          <Route path="/" element={<h2>MAIN</h2>} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
     </div>
   );
 }
-
-export default App;
