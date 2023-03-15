@@ -8,7 +8,7 @@ export default function App () {
   return (
     <div className="App">
       <Header />
-      <main className='mt-4'>
+      <main className='container mt-4'>
         <Routes>
           <Route path="/" element={<h2>MAIN</h2>} />
           <Route path="/about" element={<About />} />
